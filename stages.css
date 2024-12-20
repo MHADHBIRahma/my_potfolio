@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --white: #ffffff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+ul, ol {
+    display: inline-block;
+    text-align: left; 
+    margin: 0 auto; 
+    list-style-position: inside; 
+}
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 6px var(--shadow-light);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color var(--transition-speed) ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+nav ul li a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--shadow-light);
+    background-color: var(--white);
+    text-align: center;
+}
+
+.stage-content {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.stage-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stage-image img {
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--shadow-light);
+}
+
+@media screen and (max-width: 768px) {
+    .stage {
+        padding: 15px;
+    }
+}

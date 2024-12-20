@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Contactez-moi</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="stages.html">Stages</a></li>
+          <li><a href="manifestations.html">Manifestations</a></li>
+          <li><a href="matieres.html">Matières</a></li>
+          <li><a href="passions.html">Passions</a></li>
+          <li><a href="quizz.html">Quizz</a></li>
+          <li><a href="contact.html"aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    <main class="contact-container">
+        <h2>Envoyez-moi un message</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+</html>

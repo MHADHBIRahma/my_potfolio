@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="stages.html">Stages</a></li>
+      <li><a href="manifestations.html">Manifestations</a></li>
+      <li><a href="matieres.html">Matières</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quizz.html"aria-current="page">Quizz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+    <div class="quiz-container">
+        <h1>Quiz : HTML Basics</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p><strong>1.</strong> Quel est l'élément HTML utilisé pour définir un titre principal ?</p>
+                <label><input type="radio" name="q1" value="a"> &lt;head&gt;</label>
+                <label><input type="radio" name="q1" value="b"> &lt;title&gt;</label>
+                <label><input type="radio" name="q1" value="c"> &lt;h1&gt;</label>
+                <label><input type="radio" name="q1" value="d"> &lt;header&gt;</label>
+            </div>
+            <div class="question">
+                <p><strong>2.</strong> Quelle balise HTML est utilisée pour définir un paragraphe ?</p>
+                <label><input type="radio" name="q2" value="a"> &lt;para&gt;</label>
+                <label><input type="radio" name="q2" value="b"> &lt;p&gt;</label>
+                <label><input type="radio" name="q2" value="c"> &lt;paragraph&gt;</label>
+                <label><input type="radio" name="q2" value="d"> &lt;prg&gt;</label>
+            </div>
+            <div class="question">
+                <p><strong>3.</strong> Comment définir un attribut alternatif pour une image ?</p>
+                <label><input type="radio" name="q3" value="a"> alt="..."</label>
+                <label><input type="radio" name="q3" value="b"> text="..."</label>
+                <label><input type="radio" name="q3" value="c"> description="..."</label>
+                <label><input type="radio" name="q3" value="d"> src="..."</label>
+            </div>
+            <div class="question">
+                <p><strong>4.</strong> Quelle balise HTML est utilisée pour insérer un tableau ?</p>
+                <label><input type="radio" name="q4" value="a"> &lt;table&gt;</label>
+                <label><input type="radio" name="q4" value="b"> &lt;tab&gt;</label>
+                <label><input type="radio" name="q4" value="c"> &lt;grid&gt;</label>
+                <label><input type="radio" name="q4" value="d"> &lt;layout&gt;</label>
+            </div>
+            <div class="question">
+                <p><strong>5.</strong> Quelle balise HTML permet de définir un lien vers une feuille de style CSS externe ?</p>
+                <label><input type="radio" name="q5" value="a"> &lt;link&gt;</label>
+                <label><input type="radio" name="q5" value="b"> &lt;stylesheet&gt;</label>
+                <label><input type="radio" name="q5" value="c"> &lt;css&gt;</label>
+                <label><input type="radio" name="q5" value="d"> &lt;style&gt;</label>
+            </div>
+            <div class="question">
+                <p><strong>6.</strong> Quelle balise HTML est utilisée pour insérer une ligne horizontale ?</p>
+                <label><input type="radio" name="q6" value="a"> &lt;line&gt;</label>
+                <label><input type="radio" name="q6" value="b"> &lt;hr&gt;</label>
+                <label><input type="radio" name="q6" value="c"> &lt;horizontal&gt;</label>
+                <label><input type="radio" name="q6" value="d"> &lt;br&gt;</label>
+            </div>
+            <div class="question">
+                <p><strong>7.</strong> Comment spécifier une couleur de fond avec HTML ?</p>
+                <label><input type="radio" name="q7" value="a"> color="..."</label>
+                <label><input type="radio" name="q7" value="b"> style="background-color:..."</label>
+                <label><input type="radio" name="q7" value="c"> bgcolor="..."</label>
+                <label><input type="radio" name="q7" value="d"> background="..."</label>
+            </div>
+            <div class="question">
+                <p><strong>8.</strong> Quelle est la balise correcte pour insérer une vidéo dans une page web ?</p>
+                <label><input type="radio" name="q8" value="a"> &lt;media&gt;</label>
+                <label><input type="radio" name="q8" value="b"> &lt;video&gt;</label>
+                <label><input type="radio" name="q8" value="c"> &lt;movie&gt;</label>
+                <label><input type="radio" name="q8" value="d"> &lt;embed&gt;</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Soumettre</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

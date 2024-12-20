@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parcours.css">
+    <title>Parcours Académique</title>
+</head>
+<body>
+    <header>
+        <h1>Mon Parcours Académique</h1>
+    </header>
+
+    <div class="header-container">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html"aria-current="page">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="parcours">
+        <div class="container">
+            <h2>Diplômes obtenus</h2>
+            <p>Voici un aperçu de mes diplômes académiques :</p>
+            <ul>
+                <li><strong>Baccalauréat technologique</strong> - 2021, Lycée ENFIDHA</li>
+                <li><strong>Licence en Automatique et Informatique Industrielle</strong> - 2024, ISSATKR</li>
+                <li><strong>Génie Informatique (En cours)</strong> - IIT</li>
+            </ul>
+            
+            <div class="diplomas">
+                <h3>Mes diplômes</h3>
+                <div class="diploma-images">
+                    <div class="diploma-item">
+                        <img src="images/bac.jpg" alt="Diplôme Scientifique" data-fullimage="images/bac.jpg">
+                        <p>Baccalauréat</p>
+                    </div>
+                    <div class="diploma-item">
+                        <img src="images/license.jpg" alt="Diplôme Licence Automatique" data-fullimage="images/license.jpg">
+                        <p>Licence en Automatique et Informatique Industrielle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="parcours.js"></script>
+</body>
+</html>
